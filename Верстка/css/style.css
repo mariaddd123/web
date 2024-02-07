@@ -1,0 +1,167 @@
+/* inter-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/inter-v13-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+html{
+    box-sizing: border-box;
+}  
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+:root {
+  /* Типографика */
+  --font-family-inter: 'Inter';
+  --font-family-dela-gothic: 'Dela Gothic One', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-bold: 600;
+
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px;
+
+  /* Цвета */
+  --primary-grey-light: #F6F5F4;
+  --primary-grey-dark: #757575;
+  --primary-grey-medium: #E0E0E0;
+  --primary-grey-icon: #BABABA;
+  --primary-black: #000;
+  --primary-pink-dark: #945069;
+  --primary-pink-light: #F2D4DC;
+  --primary-cyan-dark: #2B788B;
+  --primary-cyan-light: #C3DCE3;
+  --secondary-green: #639B6D;
+  --secondary-green-faded: rgba(99, 155, 109, 0.30);
+  --secondary-yellow: #C4A24C;
+  --secondary-yellow-faded: rgba(196, 162, 76, 0.30);
+  --secondary-orange: #CB5B43;
+  --secondary-orange-faded: rgba(203, 91, 67, 0.30);
+  --secondary-cyan: #5996A5;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-inter);
+  font-style: normal;
+  color: var(--primary-black);
+  font-weight: var(--font-weight-normal);
+}
+
+.wrapper{
+    max-width: 753px;
+    padding-top: 100px;
+    margin: 0 auto;
+}
+
+.form_auth_block{
+  text-align: center;
+  padding: 10px;
+  width: 753px;
+  margin: 0 auto;
+  background-size: cover;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
+}
+
+.form_auth_block_head_text{
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: Inter;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 15px; /* 75% */
+  letter-spacing: 0.03px;
+}
+
+
+.form_auth_style{
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 445px;
+  height: 84px;
+  padding: 7px 0px 7px 0px;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.form_auth_style:last-child {
+  padding: 0;
+  height: 40px;
+}
+
+.logo{
+  width: 391px;
+  height: 158px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.form_auth_block_head_text{
+  margin: 0 auto;
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    font-weight: 400;
+font-style: normal;
+margin-bottom: 20px;
+}
+.form_auth_block label{
+    width: 58px;
+    margin: 0 auto;
+    display: block;
+    text-align: center;
+    font-style: normal;
+    letter-spacing: 0.024px;
+}
+.form_auth_block input{
+  display: block;
+  margin: 0 auto;
+  width: 377px;
+  height: 63px;
+  border-radius: 0px;  
+  border:1px solid #E0E0E0;
+  outline: none;
+}
+input:focus {
+  color: #000000;
+  border-radius: 0px;
+  border: 1px solid #436fea;
+}
+.form_auth_button{
+  font-size: 16px;
+  font-weight: 300;
+    display: block;
+    width: 93px;
+    height: 40px;
+    margin: 0 auto;
+    border-radius: 6px;
+    border: none;
+    cursor: pointer;
+    background: #57B7FF;
+}

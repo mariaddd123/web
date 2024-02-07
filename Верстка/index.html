@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Тег для корректного отображения интерфейса на безрамочных смартфонах -->
+    <!-- Подробнее: https://css-tricks.com/the-notch-and-css/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем стили -->
+    <title>Проект</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+
+  </head>
+  
+  <body>
+    <header class="main-header">
+    <div class="wrapper">
+      <div class="form_auth_block">
+          <div class="logo">
+            <img src="../img/company_logo.svg" alt="company_logo">
+          </div>
+          <p class="form_auth_block_head_text">Вход в систему</p>
+          <form class="form_auth_style" action="#" method="post">
+            <label>Логин</label>
+            <input type="email" name="auth_email" required >
+          </form>
+              <form class="form_auth_style" action="#" method="post">
+            <label>Пароль</label>
+            <input type="password" name="auth_pass" required >
+          </form>
+              <form class="form_auth_style" action="#" method="post">
+            <button class="form_auth_button" type="submit" name="form_auth_submit">ВОЙТИ</button>
+          </form>          
+      </div>   
+    </div> 
+    </header> 
+  </body>
+</html>
