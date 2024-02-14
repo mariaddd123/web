@@ -1,1 +1,193 @@
+### 1. Анаграмма
 
+Два слова называют анаграммами, если они состоят из одних и тех же букв.
+Напишите функцию, проверяющую, являются ли две строки анаграммами друг друга (регистр букв не имеет значения). Важны только символы: пробелы не учитывайте.
+
+Пример:
+
+```js
+areAnagrams('finder', 'Friend'); // true
+areAnagrams('hello', 'bye'); // false
+```
+
+КОД
+function areAnagrams(str1, str2) {
+    const cleanString = str => str.replace(/\s/g, '').toLowerCase();
+    
+    const sortedStr1 = cleanString(str1).split('').sort().join('');
+    const sortedStr2 = cleanString(str2).split('').sort().join('');
+    
+    return sortedStr1 === sortedStr2;
+}
+
+console.log(areAnagrams('finder', 'Friend')); // true
+console.log(areAnagrams('hello', 'bye')); // false
+__________________________________________________________________________
+### 3. Палиндром
+
+Палиндром — это слово, предложение или последовательность символов, которая читается слева направо так же, как и справа налево. Например, "топот", "Анна" и "У дуба буду" — палиндромы, а "привет", "Витя" и "Ехал Грека через реку" — нет.
+
+Напишите функцию `isPalindrome(str)`, принимающую как аргумент строку. Функция должна вернуть `true`, если строка — палиндром, и `false`, если нет.
+
+Примечание: гарантируется, что на вход всегда передаётся строка, состоящая только из букв и, возможно, пробелов.
+
+
+function isPalindrome(str) {
+    const cleanString = str => str.replace(/\s/g, '').toLowerCase();
+    
+    const reversedStr = cleanString(str).split('').reverse().join('');
+    
+    return cleanString(str) === reversedStr;
+}
+
+console.log(isPalindrome('A man a plan a canal Panama')); // true
+console.log(isPalindrome('hello')); // false
+
+__________________________________________________________________________
+### 4. Метры и футы
+
+В стране A для оценивания фильмов используют не десятибальную вещественную шкалу (от 1 до 10) как во всём остальном мире, а вещественную шкалу от n до m (где n, m — натуральные числа и n < m).
+
+Напишите функцию `convert`, которая поможет всему остальному миру понимать оценку страны A. Для этого она в качестве входных параметров принимает три числа: n, m и rating — оценку за фильм (n ≤ rating ≤ m), а возвращает оценку аналогичную исходной, если бы та была поставлена по десятибальной шкале.
+
+Пример:
+
+```js
+convert(1, 2, 1.5); // 5.5
+convert(2, 7, 5.5); // 7.3
+```
+
+КОД
+function convert(n, m, rating) {
+    // Нормализуем текущую оценку в диапазоне от 0 до 1
+    let normalizedRating = (rating - n) / (m - n);
+
+    // Преобразуем нормализованную оценку обратно в диапазон от 1 до 10
+    let convertedRating = normalizedRating * 9 + 1;
+
+    return convertedRating;
+}
+
+console.log(convert(1, 2, 1.5)); // 5.5
+console.log(convert(2, 7, 5.5)); // 7.3
+__________________________________________________________________________
+### 6. FizzBuzz
+
+Напишите функцию `fizzBuzz(n)`, принимающую как аргумент целое число. Функция должна выводить в консоль числа от 1 до n, заменяя числа:
+* Кратные трём — на fizz;
+* Кратные пяти — на buzz;
+* Кратные и трём, и пяти одновременно — на fizzbuzz.
+
+Пример:
+
+```js
+fizzBuzz(15);
+
+/**
+ *  1
+ *  2
+ *  fizz
+ *  4
+ *  buzz
+ *  fizz
+ *  7
+ *  8
+ *  fizz
+ *  buzz
+ *  11
+ *  fizz
+ *  13
+ *  14
+ *  fizzbuzz
+ */
+```
+
+КОД
+function fizzBuzz(n) {
+    for (let i = 1; i <= n; i++) {
+        if (i % 3 === 0 && i % 5 === 0) {
+            console.log("fizzbuzz");
+        } else if (i % 3 === 0) {
+            console.log("fizz");
+        } else if (i % 5 === 0) {
+            console.log("buzz");
+        } else {
+            console.log(i);
+        }
+    }
+}
+
+fizzBuzz(15);
+
+__________________________________________________________________________
+### 7. Уникальные числа
+
+Напишите функцию `unique(arr)`, принимающую на вход массив целых чисел. Функция должна изменить исходный массив, удалив из него все числа, которые встречаются больше одного раза.
+
+Пример:
+
+```js
+const arr = [1, 2, 3, 4, 3, 5, 7, 3, 2];
+
+unique(arr);
+
+console.log(arr); // [1, 4, 5, 7]
+```
+
+КОД
+function unique(arr) {
+    for (let i = 0; i < arr.length; i++) {
+        while (arr.indexOf(arr[i]) !== arr.lastIndexOf(arr[i])) {
+            arr.splice(arr.lastIndexOf(arr[i]), 1);
+        }
+    }
+}
+
+const arr = [1, 2, 3, 4, 3, 5, 7, 3, 2];
+unique(arr);
+console.log(arr); // [1, 4, 5, 7]
+
+__________________________________________________________________________
+### 10. Операнд, операция, операнд
+
+Напишите функцию `readAndCompute(str)`, которая:
+* Принимает на входу строку в формате `<операнд> <оператор> <операнд>`, где операнд — это произвольное число, а оператор — одна из четырёх математических операций (`+`, `-`, `*`, `/`);
+* "Читает" её (выделяет операнды и оператор);
+* Выполняет указанную операцию;
+* Возвращает результат вычисления.
+
+Пример:
+
+```js
+readAndCompute('123 + 321'); // 444
+readAndCompute('25 * 25'); // 625
+```
+КОД
+function readAndCompute(str) {
+    const elements = str.split(' ');
+    const operand1 = parseFloat(elements[0]);
+    const operator = elements[1];
+    const operand2 = parseFloat(elements[2]);
+
+    let result;
+    switch (operator) {
+        case '+':
+            result = operand1 + operand2;
+            break;
+        case '-':
+            result = operand1 - operand2;
+            break;
+        case '*':
+            result = operand1 * operand2;
+            break;
+        case '/':
+            result = operand1 / operand2;
+            break;
+        default:
+            return 'Invalid operator';
+    }
+    return result;
+}
+
+console.log(readAndCompute('123 + 321')); // 444
+console.log(readAndCompute('25 * 25')); // 625
