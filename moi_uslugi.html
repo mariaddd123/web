@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Тег для корректного отображения интерфейса на безрамочных смартфонах -->
+    <!-- Подробнее: https://css-tricks.com/the-notch-and-css/ -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no, viewport-fit=cover">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Подключаем стили -->
+    <title>Домашняя страница</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/moi_uslugi.css">
+
+  </head>
+  
+  <body>
+ <!-- Шапка -->
+    <header class="main-header">
+        <div class="main-header__wrapper">
+          <div class="main-header__left-content">
+            <h1 class="main-header__logo">Мои услуги
+                <span>
+                  <svg xmlns="http://www.w3.org/2000/svg" width="19" height="16" viewBox="0 0 19 16" fill="none">
+                    <g clip-path="url(#clip0_394_9969)">
+                    <path fill-rule="evenodd" clip-rule="evenodd" d="M1.62695 9.36596L9.29906 15.8086L16.9712 9.36596L15.8752 8.44559L9.29906 13.9678L2.72297 8.44559L1.62695 9.36596Z" fill="black"/>
+                    </g>
+                    <defs>
+                    <clipPath id="clip0_394_9969">
+                    <rect width="15.6193" height="18.6" fill="white" transform="matrix(0 -1 1 0 0 15.8086)"/>
+                    </clipPath>
+                    </defs>
+                  </svg>
+                </span>
+            </h1>
+          </div>
+          <div class="main-header-center-logo">
+            <div class="logo">
+                <img src="../img/company_logo.svg" width="200px" height="66px" alt="company_logo">
+            </div>
+          </div>
+          <div class="main-header__right-content">
+            <div class="search-bar__filter">
+              <img class="search_pic" src="../img/search.png" width="" height="29"/>
+            </div>
+            <button class="button_right_header">
+              <img class="setting_pic" src="../img/setting.png" width="30" height="30"/>
+              <img class="ring_pic" src="../img/ring.png" width="24" height="30"/>
+              <img class="profile_pic" src="../img/profile.png" width="60" height="60"/>
+            </button>
+          </div>
+        </div>
+      </header>
+    <!-- Основной контент -->  
+      <div class="main_content" >
+        <div class="left_menu">
+            <button class="show_all">Вернуться ко всем запросам</button>
+          <div class="menu_actions" >
+            <div class="left_menu_logo">Действия</div>
+            <nav class="left_menu_options">
+              <a class="link left_menu_options" href="/">Перейти в профиль</a>
+              <a class="link left_menu_options" href="/">Добавить согласующего +</a>
+              <a class="link left_menu_options" href="/">Посмотреть участников документооборота</a>
+              <a class="left_menu_options">
+            
+              </a>
+            </nav>
+          </div>
+            <div class="attachment_info">Вложение</div>
+            <div class="attach_file">
+                <img class="word_pic" src="../img/Word.png" width="60" height="60"/>
+                <div class="attach_details">
+                    <div class="attach_name">отпуск.doc</div>
+                    <div class="attach_date">Загружено: 2023-05-14</div>
+                </div>
+                <img class="cancel_pic" src="../img/Cancel.png" width="30" height="30"/>
+            </div>
+            </div>
+         <div class="center_block">
+        <div class="center_block_name">Вам отправлен запрос на согласование</div>
+         <div class="main_info_center_block">
+            <img class="big_profile_pic" src="../img/big_profile.png" width="200" height="200"/>
+          <div class="info_list"> 
+            <ul class="vacation_info">
+                <li class="vacation__item">Очередной отпуск 14 дней(10.07.2023 г. - 16.07.2023 г.)</li>
+                <li class="vacation__item">Очередной отпуск 7 дней(11.09. 2023 г. - 17.092023 г.)</li>
+                <li class="vacation__item">Очередной отпуск 7 дней(18.12.2023 г. - 24.12.2023 г.)</li>
+              </ul>
+              <div class="open_calendar">  
+                <button class="calendar_button">Посмотреть календарь</button>
+                <select class='month' name = "month">
+                  <option value = "january">Январь</option>
+                  <option value = "february">Февраль</option>
+                  <option value = "march">Март</option>
+                  <option value = "april">Апрель</option>
+                  <option value = "may">Май</option>
+                  <option value = "june">Июнь</option>
+                  <option value = "july">Июль</option>
+                  <option value = "august">Август</option>
+                  <option value = "september">Сентябрь</option>
+                  <option value = "october">Октябрь</option>
+                  <option value = "november">Ноябрь</option>
+                  <option value = "december">Декабрь</option>
+                </select>
+              </div>
+
+              <div class="show_holidays">  
+                <button class="holidays_button">Показать праздники</button>
+                <input type="text" placeholder="Укажите месяц (01,02,...,12)" />
+              </div>
+
+              <div class="holidays">
+                <ul class="holidays_info">
+                </ul>
+              </div>
+              <div class="error">
+              </div>
+
+              <ul class="tech_details">
+                <li class="tech_details__item">Инициатор запроса: Эденбаум Людмила Юрьевна</li>
+                <li class="tech_details__item">Тип запроса: отсутствие</li>
+                <li class="tech_details__item">Статус согласования: Согласование</li>
+                <li class="tech_details__item">Текущий участник маршрута: Киселева Виктория Александровна</li>
+              </ul>
+             </div>  
+            </div> 
+            <div class="center_block_name">Добавить комментарий</d iv>
+        <div class="comment_block">
+            <form>
+                <textarea class="comment_input">Написать комментарий</textarea>
+            </form> 
+        </div> 
+
+        <script src="./moi_uslugi.js"></script>  
+
+            <div class="buttons" href="/">
+                <input
+                  type="submit"
+                  value="Согласовать"
+                  class="button button_submit"
+>
+                <button class="button reject" href="/">Отклонить</button>
+            </div>      
+         </div>
+        </div>   
+        </div>
+    </div>
+  </body>
+</html>
