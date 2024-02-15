@@ -1,0 +1,323 @@
+/* inter-300 - latin */
+@font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 300;
+    src: url('../fonts/inter-v13-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-regular - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+  /* inter-500 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 500;
+    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }  
+  /* inter-600 - latin */
+  @font-face {
+    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 600;
+    src: url('../fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  }
+html{
+    box-sizing: border-box;
+}  
+*, *::before, *::after{
+    box-sizing: inherit;
+}
+
+:root {
+  /* Типографика */
+  --font-family-inter: 'Inter';
+  --font-family-dela-gothic: 'Dela Gothic One', sans-serif;
+  --font-weight-light: 300;
+  --font-weight-normal: 400;
+  --font-weight-500: 500;  
+  --font-weight-bold: 600;
+
+  --font-size-xs: 12px;
+  --font-size-s: 14px;
+  --font-size-m: 16px;
+  --font-size-l: 18px; 
+  --font-size-20: 20px;   
+
+  /* Цвета */
+  --primary-grey-light: #F6F5F4;
+  --primary-grey-dark: #757575;
+  --primary-grey-medium: #E0E0E0;
+  --primary-grey-icon: #BABABA;
+  --primary-black: #000;
+  --primary-pink-dark: #945069;
+  --primary-pink-light: #F2D4DC;
+  --primary-cyan-dark: #2B788B;
+  --primary-cyan-light: #C3DCE3;
+  --secondary-green: #639B6D;
+  --secondary-green-faded: rgba(99, 155, 109, 0.30);
+  --secondary-yellow: #C4A24C;
+  --secondary-yellow-faded: rgba(196, 162, 76, 0.30);
+  --secondary-orange: #CB5B43;
+  --secondary-orange-faded: rgba(203, 91, 67, 0.30);
+  --secondary-cyan: #5996A5;
+}
+
+body {
+  margin: 0 auto;
+  font-family: var(--font-family-inter);
+  font-style: normal;
+  color: var(--primary-black);
+  font-weight: var(--font-weight-normal);
+  background: #FAFAFA;
+}
+
+.main-header__wrapper{
+  display: flex;
+  height: 80px;
+  padding: 0px 10px;
+  align-items: center;
+  gap: 10px;
+  margin-right: 10px;
+  background: #FFF;
+  width: 100%;
+
+}
+
+.main-header__left-content{
+  
+  display: flex;
+  padding: 13px 30px;
+
+  height: 54px;
+  font-size: var(--font-size-20);
+  font-weight: var(--font-weight-500);
+  line-height: 28px; /* 140% */
+  letter-spacing: 0.03px;
+}
+
+.main-header__logo{
+  gap: 10px;
+}
+
+.main-header-center-logo{
+    text-align: center;
+    display: flex;
+
+    height: 66px;
+    margin: 0 auto;
+}  
+
+.logo{
+  display: flex;
+  justify-content: center;
+}
+
+.main-header__right-content{
+  align-items: center;  
+  display: flex;
+  padding: 10px 10px;
+  gap: 20px;
+}
+
+
+.search-bar__filter{
+  margin: 0 auto;  
+  width: 162px;
+  height: 34px;
+  display: flex;
+  border-radius: 15px;
+  background-color: #EEEEEE;
+}
+
+.search_pic{
+  margin: 2px 0px 0px 114px;
+  display: block;
+}
+
+.button_right_header{
+display: flex;
+gap: 20px;
+align-items: center; 
+background-color: #fff;
+border: #fff;
+}
+
+/* основной контент */
+
+.main_info{
+  margin: 0 auto;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  padding: 10px 20px;
+}
+
+.actual_tasks{
+  width: 50%;
+  height: 553px;
+}
+
+.paragraph_name{
+  padding-bottom: 20px;
+  padding-top: 10px;
+  display: flex;
+  flex-grow:1;
+  color: #888888;
+  justify-content: space-between;
+  font-size: 24px;
+  font-family: var(--font-weight-normal);
+}
+
+.show_all{
+  color: #6B6B6B;
+  font-size: var(--font-size-l);
+  font-family: var(--font-weight-light);
+  background-color: #FAFAFA;
+  border: #FAFAFA;
+}
+
+.blocks_tasks_actual_tasks{
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  width: 100%;
+}
+
+.blocks_tasks{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  padding: 10px 10px;
+  background-color: #fff;
+}
+
+.first_line{
+  display: flex;
+  flex-grow:1;
+  justify-content: space-between;
+  gap:10px;
+  margin-bottom: 10px;
+}
+
+.first_line_task_name{
+  font-size: var(--font-size-20);
+}
+
+.first_line_task_status{
+ padding: 5px 5px;
+ border-radius: 6px;
+ font-size: 16px;
+}
+
+.first_line_task_status{
+  justify-content: center;
+  text-align: center;
+  height: 30px;
+background-color: #D8ECFF;
+}
+
+.first_line_task_status_expired{
+  background-color: #FFC5C5;
+}
+
+.second_line{
+  text-align: right;
+  float: right;
+  font-size: 16px;
+}
+
+.second_line_expired{
+  color: #FF3D3D;
+}
+
+.selected_topics{
+  width: 50%;
+  padding: 0px 30px;
+}
+
+.topic_name {
+  padding-bottom: 20px;
+  padding-top: 10px;
+  color: #888888;
+  font-size: 24px;
+  font-family: var(--font-weight-normal);
+}
+
+.selected_blocks_space{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0px;
+}
+
+.selected_block{
+  padding: 20px 10px;
+  height: 200px;
+  width: 200px;
+  background-color: #C9EAFF;
+  box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.25);
+  border-radius: 6px;
+}
+
+.selected_block_white{
+  background-color: #fff;
+}
+
+.block_content{
+  float: right;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.block_content_white{
+  float: right;
+  display: flex;
+  flex-direction: column;
+  gap: 70px;
+}
+
+.block_name{
+  height: 40px;
+  text-align: right;
+font-size: var(--font-size-20);
+font-family: var(--font-weight-bold);
+}
+
+.block_icon{
+display: block;
+margin-left: auto;
+}
+
+.block_description{
+  text-align: right;
+  font-size: var(--font-size-xs);
+  font-family: var(--font-weight-light);
+  color: #8F4E4E;
+}
+
+.services{
+  width: 70%;
+  padding: 0px 20px;
+  
+}
+
+.service_name{
+  display: inline-block;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  color: #888888;
+  font-size: 24px;
+  font-family: var(--font-weight-normal);
+}
