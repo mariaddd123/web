@@ -1,7 +1,7 @@
 const apiKey = "StZKwTscb8mOL3YAP0oyAvTiOF2jN4UC";
 const apiUrl = "https://calendarific.com/api/v2/holidays?&country=RU&year=2024&type=national&month=";
 
-const holidayInput = document.querySelector(".show_holidays input");
+const holidayInput = document.querySelector(".show_holidays select");
 const holidayButton = document.querySelector(".show_holidays button");
 const monthList = [];
 const holidays = document.querySelector(".holidays_info");
@@ -63,13 +63,14 @@ function updateHolidayList() {
 
 function handleSearch() {
   checkHolidays(holidayInput.value);
-  holidayInput.value = "";
 }
 
-holidayButton.addEventListener("click", handleSearch);
-holidayInput.addEventListener("keydown", (event) => {
-  if (event.keyCode === 13) {
+function handleClear() {
+  holidays.innerHTML = '';
+}
+
+holidayButton.addEventListener("click", handleClear);
+holidayInput.addEventListener("change", (event) => {
     handleSearch();
-  }
 });
 

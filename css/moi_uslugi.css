@@ -1,40 +1,55 @@
 /* inter-300 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/inter-v13-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* inter-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* inter-500 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 500;
-    src: url('../fonts/inter-v13-latin-500.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }  
-  /* inter-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-html{
-    box-sizing: border-box;
-}  
-*, *::before, *::after{
-    box-sizing: inherit;
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/inter-v13-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-500 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/inter-v13-latin-500.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v13-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 :root {
@@ -43,14 +58,14 @@ html{
   --font-family-dela-gothic: 'Dela Gothic One', sans-serif;
   --font-weight-light: 300;
   --font-weight-normal: 400;
-  --font-weight-500: 500;  
+  --font-weight-500: 500;
   --font-weight-bold: 600;
 
   --font-size-xs: 12px;
   --font-size-s: 14px;
   --font-size-m: 16px;
-  --font-size-l: 18px; 
-  --font-size-20: 20px;   
+  --font-size-l: 18px;
+  --font-size-20: 20px;
 
   /* Цвета */
   --primary-grey-light: #F6F5F4;
@@ -80,7 +95,7 @@ body {
   background: #FAFAFA;
 }
 
-.main-header__wrapper{
+.main-header__wrapper {
   display: flex;
   height: 80px;
   padding: 0px 10px;
@@ -92,45 +107,46 @@ body {
 
 }
 
-.main-header__left-content{
-  
+.main-header__left-content {
+
   display: flex;
   padding: 13px 30px;
 
   height: 54px;
   font-size: var(--font-size-20);
   font-weight: var(--font-weight-500);
-  line-height: 28px; /* 140% */
+  line-height: 28px;
+  /* 140% */
   letter-spacing: 0.03px;
 }
 
-.main-header__logo{
+.main-header__logo {
   gap: 10px;
 }
 
-.main-header-center-logo{
-    text-align: center;
-    display: flex;
+.main-header-center-logo {
+  text-align: center;
+  display: flex;
 
-    height: 66px;
-    margin: 0 auto;
-}  
+  height: 66px;
+  margin: 0 auto;
+}
 
-.logo{
+.logo {
   display: flex;
   justify-content: center;
 }
 
-.main-header__right-content{
-  align-items: center;  
+.main-header__right-content {
+  align-items: center;
   display: flex;
   padding: 10px 10px;
   gap: 20px;
 }
 
 
-.search-bar__filter{
-  margin: 0 auto;  
+.search-bar__filter {
+  margin: 0 auto;
   width: 162px;
   height: 34px;
   display: flex;
@@ -138,185 +154,185 @@ body {
   background-color: #EEEEEE;
 }
 
-.search_pic{
+.search_pic {
   margin: 2px 0px 0px 114px;
   display: block;
 }
 
-.button_right_header{
-display: flex;
-gap: 20px;
-align-items: center; 
-background-color: #fff;
-border: #fff;
+.button_right_header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  background-color: #fff;
+  border: #fff;
 }
 
 /* основной контент */
 
-.main_content{
+.main_content {
   display: flex;
   gap: 10px;
 }
 
-.left_menu{
-background-color: #fff;
-width: 340px;
-height: 600px;
-display: flex;
-flex-direction: column;
-gap: 10px;
+.left_menu {
+  background-color: #fff;
+  width: 340px;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.show_all{
- color: #2E2AD3;
- background-color: #fff;
- border: #fff;
- font-weight: 300;
-font-size: var(--font-size-l);
-padding: 20px 10px;
-text-align: left;
+.show_all {
+  color: #2E2AD3;
+  background-color: #fff;
+  border: #fff;
+  font-weight: 300;
+  font-size: var(--font-size-l);
+  padding: 20px 10px;
+  text-align: left;
 }
 
-.menu_actions{
-padding: 0px 20px;
-font-size: 22px;
-color: #000;
-margin-bottom: 51px;
+.menu_actions {
+  padding: 0px 20px;
+  font-size: 22px;
+  color: #000;
+  margin-bottom: 51px;
 }
 
-.left_menu_logo{
-line-height: 32px;
-font-weight: 500;
+.left_menu_logo {
+  line-height: 32px;
+  font-weight: 500;
 }
 
-.left_menu_options{
-line-height: 32px;
- display: flex;
- flex-direction: column;
- gap: 10px; 
- font-weight: 300;
+.left_menu_options {
+  line-height: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  font-weight: 300;
 }
 
-.attachment_info{
-padding: 0px 20px;
-font-size: 22px;
-color: #000; 
-line-height: 32px;
-font-weight: 500;
+.attachment_info {
+  padding: 0px 20px;
+  font-size: 22px;
+  color: #000;
+  line-height: 32px;
+  font-weight: 500;
 }
 
-.attach_file{
-padding: 0px 20px;
-display: flex;
+.attach_file {
+  padding: 0px 20px;
+  display: flex;
 }
 
-.attach_details{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;   
-    width: 208px;
+.attach_details {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  width: 208px;
 }
 
-.center_block{
- background-color: #fff;
- display: flex;
-flex-direction: column;
-gap: 14px;
-padding: 30px 60px;
+.center_block {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  padding: 30px 60px;
 }
 
-.center_block_name{
-font-size: 30px;
-font-weight: 300;
+.center_block_name {
+  font-size: 30px;
+  font-weight: 300;
 }
 
-.main_info_center_block{
-  padding: 8px 10px;  
+.main_info_center_block {
+  padding: 8px 10px;
   display: flex;
   column-gap: 50px;
-  border:  0.5px solid #AEAEAE;
+  border: 0.5px solid #AEAEAE;
 }
 
-.vacation_info{ 
-font-weight: 500;
+.vacation_info {
+  font-weight: 500;
 }
 
-.tech_details{
-font-weight: 300;
+.tech_details {
+  font-weight: 300;
 }
 
-.info_list{
-    font-size: 20px;
-    display: flex;
-    flex-direction: column;
-    line-height: 40px;
-letter-spacing: -0.25px;
+.info_list {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  line-height: 40px;
+  letter-spacing: -0.25px;
 }
 
-.comment_block{
-    gap: 14px;
+.comment_block {
+  gap: 14px;
 }
 
-.comment_input{
-    width: 880px;
-    resize: none;
-    border:  0.5px solid #AEAEAE;
-    color: #636363;
-font-size: 15px;
-line-height: 32px;
-letter-spacing: 0.15%;
-font-family: var(--font-family-inter);
-gap: 14px;
+.comment_input {
+  width: 880px;
+  resize: none;
+  border: 0.5px solid #AEAEAE;
+  color: #636363;
+  font-size: 15px;
+  line-height: 32px;
+  letter-spacing: 0.15%;
+  font-family: var(--font-family-inter);
+  gap: 14px;
 }
 
-.buttons{
-    display: flex;
-gap: 20px;
+.buttons {
+  display: flex;
+  gap: 20px;
 }
 
-.button{
-    height: 40px;
-    font-size: 25px;
-    padding: 0px 10px;
-    border-radius: 10px;
-    border: 1px solid #808080;
-gap: 20px;
-background-color: #fff;
+.button {
+  height: 40px;
+  font-size: 25px;
+  padding: 0px 10px;
+  border-radius: 10px;
+  border: 1px solid #808080;
+  gap: 20px;
+  background-color: #fff;
 }
 
-.button_submit{
-    background-color: #EEEEEE;
+.button_submit {
+  background-color: #EEEEEE;
 }
 
-.open_calendar{
+.open_calendar {
   display: flex;
   gap: 10px;
 }
 
-.holidays{
+.holidays {
   display: flex;
   gap: 10px;
   display: none;
 }
 
-.holidays_info{
+.holidays_info {
   gap: 10px;
   display: block;
 }
 
-.calendar_button{
+.calendar_button {
   border-radius: 4px;
   border: 1px solid #808080;
 
 
-background-color: #d9e0e7;
+  background-color: #d9e0e7;
 }
 
-.month{
-  width: 100px;
+.month {
+  width: 120px;
 }
 
-.error{
+.error {
   display: none;
   color: #7a2222;
 }

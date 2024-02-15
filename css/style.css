@@ -1,32 +1,44 @@
 /* inter-300 - latin */
 @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 300;
-    src: url('../fonts/inter-v13-latin-300.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* inter-regular - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-  /* inter-600 - latin */
-  @font-face {
-    font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-    font-family: 'Inter';
-    font-style: normal;
-    font-weight: 600;
-    src: url('../fonts/inter-v13-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
-  }
-html{
-    box-sizing: border-box;
-}  
-*, *::before, *::after{
-    box-sizing: inherit;
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 300;
+  src: url('../fonts/inter-v13-latin-300.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-regular - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/inter-v13-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+/* inter-600 - latin */
+@font-face {
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/inter-v13-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
 :root {
@@ -69,13 +81,13 @@ body {
   font-weight: var(--font-weight-normal);
 }
 
-.wrapper{
-    max-width: 753px;
-    padding-top: 100px;
-    margin: 0 auto;
+.wrapper {
+  max-width: 753px;
+  padding-top: 100px;
+  margin: 0 auto;
 }
 
-.form_auth_block{
+.form_auth_block {
   text-align: center;
   padding: 10px;
   width: 753px;
@@ -84,19 +96,20 @@ body {
   box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.25);
 }
 
-.form_auth_block_head_text{
+.form_auth_block_head_text {
   margin-bottom: 20px;
   text-align: center;
   font-family: Inter;
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 15px; /* 75% */
+  line-height: 15px;
+  /* 75% */
   letter-spacing: 0.03px;
 }
 
 
-.form_auth_style{
+.form_auth_style {
   margin: 0 auto;
   margin-bottom: 20px;
   display: flex;
@@ -114,54 +127,62 @@ body {
   height: 40px;
 }
 
-.logo{
+.logo {
   width: 391px;
   height: 158px;
   margin: 0 auto;
   margin-bottom: 20px;
 }
 
-.form_auth_block_head_text{
+.form_auth_block_head_text {
   margin: 0 auto;
-    display: block;
-    text-align: center;
-    padding: 10px;
-    font-size: 20px;
-    font-weight: 400;
-font-style: normal;
-margin-bottom: 20px;
+  display: block;
+  text-align: center;
+  padding: 10px;
+  font-size: 20px;
+  font-weight: 400;
+  font-style: normal;
+  margin-bottom: 20px;
 }
-.form_auth_block label{
-    width: 58px;
-    margin: 0 auto;
-    display: block;
-    text-align: center;
-    font-style: normal;
-    letter-spacing: 0.024px;
+
+.form_auth_block label {
+  width: 58px;
+  margin: 0 auto;
+  display: block;
+  text-align: center;
+  font-style: normal;
+  letter-spacing: 0.024px;
 }
-.form_auth_block input{
+
+.form_auth_block input {
   display: block;
   margin: 0 auto;
   width: 377px;
   height: 63px;
-  border-radius: 0px;  
-  border:1px solid #E0E0E0;
+  border-radius: 0px;
+  border: 1px solid #E0E0E0;
   outline: none;
 }
+
 input:focus {
   color: #000000;
   border-radius: 0px;
   border: 1px solid #436fea;
 }
-.form_auth_button{
+
+.form_auth_button {
   font-size: 16px;
   font-weight: 300;
-    display: block;
-    width: 93px;
-    height: 40px;
-    margin: 0 auto;
-    border-radius: 6px;
-    border: none;
-    cursor: pointer;
-    background: #57B7FF;
+  display: block;
+  width: 93px;
+  height: 40px;
+  margin: 0 auto;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  background: #57B7FF;
+}
+
+body a.button_form_auth {
+  color: #fff !important;
 }
