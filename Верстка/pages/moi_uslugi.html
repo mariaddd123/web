@@ -89,6 +89,36 @@
                 <li class="vacation__item">Очередной отпуск 7 дней(11.09. 2023 г. - 17.092023 г.)</li>
                 <li class="vacation__item">Очередной отпуск 7 дней(18.12.2023 г. - 24.12.2023 г.)</li>
               </ul>
+              <div class="open_calendar">  
+                <button class="calendar_button">Посмотреть календарь</button>
+                <select class='month' name = "month">
+                  <option value = "january">Январь</option>
+                  <option value = "february">Февраль</option>
+                  <option value = "march">Март</option>
+                  <option value = "april">Апрель</option>
+                  <option value = "may">Май</option>
+                  <option value = "june">Июнь</option>
+                  <option value = "july">Июль</option>
+                  <option value = "august">Август</option>
+                  <option value = "september">Сентябрь</option>
+                  <option value = "october">Октябрь</option>
+                  <option value = "november">Ноябрь</option>
+                  <option value = "december">Декабрь</option>
+                </select>
+              </div>
+
+              <div class="show_holidays">  
+                <button class="holidays_button">Показать праздники</button>
+                <input type="text" placeholder="Укажите месяц (01,02,...,12)" />
+              </div>
+
+              <div class="holidays">
+                <ul class="holidays_info">
+                </ul>
+              </div>
+              <div class="error">
+              </div>
+
               <ul class="tech_details">
                 <li class="tech_details__item">Инициатор запроса: Эденбаум Людмила Юрьевна</li>
                 <li class="tech_details__item">Тип запроса: отсутствие</li>
@@ -97,12 +127,15 @@
               </ul>
              </div>  
             </div> 
-            <div class="center_block_name">Добавить комментарий</div>
+            <div class="center_block_name">Добавить комментарий</d iv>
         <div class="comment_block">
             <form>
                 <textarea class="comment_input">Написать комментарий</textarea>
             </form> 
         </div> 
+
+        <script src="./moi_uslugi.js"></script>  
+
             <div class="buttons" href="/">
                 <input
                   type="submit"
@@ -110,7 +143,7 @@
                   class="button button_submit"
 >
                 <button class="button reject" href="/">Отклонить</button>
-              </div>      
+            </div>      
          </div>
         </div>   
         </div>
