@@ -274,7 +274,6 @@ gap: 14px;
 gap: 20px;
 }
 
-
 .button{
     height: 40px;
     font-size: 25px;
@@ -287,4 +286,37 @@ background-color: #fff;
 
 .button_submit{
     background-color: #EEEEEE;
+}
+
+.open_calendar{
+  display: flex;
+  gap: 10px;
+}
+
+.holidays{
+  display: flex;
+  gap: 10px;
+  display: none;
+}
+
+.holidays_info{
+  gap: 10px;
+  display: block;
+}
+
+.calendar_button{
+  border-radius: 4px;
+  border: 1px solid #808080;
+
+
+background-color: #d9e0e7;
+}
+
+.month{
+  width: 100px;
+}
+
+.error{
+  display: none;
+  color: #7a2222;
 }
